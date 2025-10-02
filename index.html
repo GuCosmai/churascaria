@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-PT" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Churrascaria Portugal - O Sabor da Tradição</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="text-gray-200">
+    <!-- Cabeçalho e Navegação -->
+    <header
+      id="inicio"
+      class="bg-black bg-opacity-80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50"
+    >
+  <div class="container mx-auto flex justify-between items-center p-4 gap-4">
+        <h1 class="text-2xl font-bold text-white tracking-wider">
+          Churrascaria <span class="text-amber-500">Portugal</span>
+        </h1>
+  <nav class="hidden md:flex gap-4">
+          <a href="#sobre" class="nav-link">Sobre Nós</a>
+          <a href="#cardapio" class="nav-link">Cardápio</a>
+          <a href="#galeria" class="nav-link">Galeria</a>
+          <a href="#contato" class="nav-link">Contato</a>
+          <a
+            href="#reservas"
+            class="ml-4 px-5 py-2 bg-amber-600 text-white rounded-full hover:bg-amber-700 transition-colors duration-300"
+            >Reservar</a
+          >
+        </nav>
+        <button id="mobile-menu-button" class="md:hidden text-white cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+      <!-- Menu Mobile -->
+      <div id="mobile-menu" class="md:hidden bg-black bg-opacity-90">
+        <a
+          href="#sobre"
+          class="block text-center py-3 text-white hover:bg-amber-600 transition"
+          >Sobre Nós</a
+        >
+        <a
+          href="#cardapio"
+          class="block text-center py-3 text-white hover:bg-amber-600 transition"
+          >Cardápio</a
+        >
+        <a
+          href="#galeria"
+          class="block text-center py-3 text-white hover:bg-amber-600 transition"
+          >Galeria</a
+        >
+        <a
+          href="#contato"
+          class="block text-center py-3 text-white hover:bg-amber-600 transition"
+          >Contato</a
+        >
+        <a
+          href="#reservas"
+          class="block text-center py-4 bg-amber-600 text-white hover:bg-amber-700 transition"
+          >Reservar Mesa</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- Secção Hero -->
+      <section
+        class="hero-bg h-screen flex items-center justify-center text-center text-white"
+      >
+        <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+          <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-4">
+          Churrascaria <span class="text-amber-500">Portugal</span>
+        </h1>
+          <p class="text-xl md:text-2xl mb-8">
+            Onde cada corte de carne conta uma história de sabor.
+          </p>
+          <a
+            href="#reservas"
+            class="px-8 py-4 bg-amber-600 text-white font-bold rounded-full text-lg hover:bg-amber-700 transition-transform duration-300 inline-block"
+            >Faça a sua Reserva</a
+          >
+        </div>
+      </section>
+
+      <!-- Secção Sobre Nós -->
+      <section id="sobre" class="py-20 bg-stone-900">
+        <div
+          class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
+        >
+          <div>
+            <img
+              src="https://lh3.googleusercontent.com/p/AF1QipP5dRk0f-TS0IUPCePBF8ZcQyEfNPumaQQ6tYG9=s1360-w1360-h1020-rw"
+              alt="Interior do restaurante"
+              class="int_restaurante"
+            />
+          </div>
+          <div class="text-left">
+            <h2 class="text-4xl font-bold text-amber-500 mb-6">
+              A Nossa História
+            </h2>
+            <p class="text-lg mb-4 text-gray-300">
+              Fundada com a paixão pela arte do churrasco, a Churrascaria
+              Portugal traz para a sua mesa décadas de tradição. Selecionamos as
+              melhores carnes e preparamo-las no ponto perfeito, respeitando os
+              métodos que nos foram passados de geração em geração.
+            </p>
+            <p class="text-lg text-gray-300">
+              O nosso ambiente é um convite ao convívio. Um espaço acolhedor e
+              familiar, ideal para celebrar momentos especiais ou simplesmente
+              para desfrutar de uma refeição inesquecível.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secção Cardápio -->
+      <section id="cardapio" class="py-20">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-4xl font-bold text-amber-500 mb-2">
+            O Nosso Cardápio
+          </h2>
+          <p class="text-lg text-gray-400 mb-12">
+            Uma seleção dos melhores cortes e acompanhamentos.
+          </p>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+            <!-- Item Cardápio 1 -->
+            <div class="bg-stone-800 p-6 rounded-lg">
+              <h3 class="text-2xl font-bold text-white mb-2">
+                Rodízio Completo
+              </h3>
+              <p class="text-gray-400">
+                Desfrute de uma seleção premium com mais de 15 cortes de carne,
+                servidos diretamente na sua mesa, além de um buffet completo de
+                saladas e pratos quentes.
+              </p>
+            </div>
+            <!-- Item Cardápio 2 -->
+            <div class="bg-stone-800 p-6 rounded-lg">
+              <h3 class="text-2xl font-bold text-white mb-2">Picanha Nobre</h3>
+              <p class="text-gray-400">
+                A rainha do churrasco. Suculenta, macia e com uma capa de
+                gordura que lhe confere um sabor inigualável. Servida no ponto
+                que preferir.
+              </p>
+            </div>
+            <!-- Item Cardápio 3 -->
+            <div class="bg-stone-800 p-6 rounded-lg">
+              <h3 class="text-2xl font-bold text-white mb-2">
+                Costela Premium
+              </h3>
+              <p class="text-gray-400">
+                Assada lentamente por horas para garantir a máxima maciez. Uma
+                experiência que se desfaz na boca, rica em sabor e tradição.
+              </p>
+            </div>
+            <!-- Item Cardápio 4 -->
+            <div class="bg-stone-800 p-6 rounded-lg">
+              <h3 class="text-2xl font-bold text-white mb-2">
+                Buffet de Saladas
+              </h3>
+              <p class="text-gray-400">
+                Uma variedade fresca de saladas, queijos, azeitonas e iguarias
+                para complementar perfeitamente a sua refeição.
+              </p>
+            </div>
+            <!-- Item Cardápio 5 -->
+            <div class="bg-stone-800 p-6 rounded-lg">
+              <h3 class="text-2xl font-bold text-white mb-2">
+                Vinhos Selecionados
+              </h3>
+              <p class="text-gray-400">
+                Uma carta de vinhos pensada para harmonizar com os nossos
+                pratos, com rótulos nacionais e internacionais.
+              </p>
+            </div>
+            <!-- Item Cardápio 6 -->
+            <div class="bg-stone-800 p-6 rounded-lg">
+              <h3 class="text-2xl font-bold text-white mb-2">
+                Sobremesas da Casa
+              </h3>
+              <p class="text-gray-400">
+                Finalize a sua experiência com as nossas sobremesas artesanais,
+                como o pudim de leite ou a mousse de chocolate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secção de Menus -->
+      <section id="menus" class="py-20 bg-stone-900">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-4xl font-bold text-amber-500 mb-2">
+            Nossos Cardápios
+          </h2>
+          <p class="text-lg text-gray-400 mb-12">
+            Clique para ampliar e ver os detalhes.
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+            <div class="menu-image-container">
+              <img src="https://placehold.co/400x600/333/FFF?text=Cardápio+1" alt="Cardápio 1" class="menu-thumbnail w-full h-auto rounded-lg cursor-pointer hover:opacity-80 transition-opacity">
+            </div>
+            <div class="menu-image-container">
+              <img src="https://placehold.co/400x600/333/FFF?text=Cardápio+2" alt="Cardápio 2" class="menu-thumbnail w-full h-auto rounded-lg cursor-pointer hover:opacity-80 transition-opacity">
+            </div>
+            <div class="menu-image-container">
+              <img src="https://placehold.co/400x600/333/FFF?text=Cardápio+3" alt="Cardápio 3" class="menu-thumbnail w-full h-auto rounded-lg cursor-pointer hover:opacity-80 transition-opacity">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secção Galeria -->
+      <section id="galeria" class="py-20">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-4xl font-bold text-amber-500 mb-12">
+            Momentos e Sabores
+          </h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="grid gap-4">
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://placehold.co/400x600/555555/FFFFFF?text=Espeto+de+Carne"
+                  alt="Espeto de carne grelhada na churrasqueira"
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://placehold.co/400x400/555555/FFFFFF?text=Buffet+Colorido"
+                  alt="Buffet colorido de saladas frescas"
+                />
+              </div>
+            </div>
+            <div class="grid gap-4">
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://placehold.co/400x400/555555/FFFFFF?text=Mesa+de+Amigos"
+                  alt="Mesa de amigos celebrando com churrasco"
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://placehold.co/400x600/555555/FFFFFF?text=Corte+de+Picanha"
+                  alt="Corte de picanha suculenta sendo servido"
+                />
+              </div>
+            </div>
+            <div class="grid gap-4">
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://placehold.co/400x600/555555/FFFFFF?text=Vinho+e+Carne"
+                  alt="Taça de vinho ao lado de carne grelhada"
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://placehold.co/400x400/555555/FFFFFF?text=Detalhe+Grelha"
+                  alt="Detalhe da grelha com carnes assando"
+                />
+              </div>
+            </div>
+            <div class="grid gap-4">
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://placehold.co/400x400/555555/FFFFFF?text=Sobremesa"
+                  alt="Sobremesa artesanal servida na churrascaria"
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="https://placehold.co/400x600/555555/FFFFFF?text=Ambiente"
+                  alt="Ambiente acolhedor do restaurante"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secção de Reservas -->
+      <section
+        id="reservas"
+        class="py-20 bg-cover bg-center"
+        style="
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.8),
+              rgba(0, 0, 0, 0.8)
+            ),
+            url('https://img.criativodahora.com.br/2024/02/criativo-65bd8ee0379b1MDIvMDIvMjAyNCAyMWg1NA==.jpg');
+        "
+      >
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-4xl font-bold text-amber-500 mb-4">
+            Reserve a sua Mesa
+          </h2>
+          <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+            Garanta o seu lugar no paraíso do churrasco. O preenchimento do
+            formulário não garante a reserva. Aguarde a nossa confirmação.
+          </p>
+          <form
+            id="reservation-form"
+            class="max-w-xl mx-auto bg-stone-800 bg-opacity-80 p-8 rounded-lg"
+          >
+            <div class="grid sm:grid-cols-2 gap-6">
+              <input
+                type="text"
+                name="nome"
+                placeholder="O seu Nome"
+                class="w-full p-3 bg-stone-700 text-white rounded border border-stone-600 focus:outline-none focus:ring-2 focus:ring-amber-500"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="O seu Email"
+                class="w-full p-3 bg-stone-700 text-white rounded border border-stone-600 focus:outline-none focus:ring-2 focus:ring-amber-500"
+              />
+              <input
+                type="tel"
+                name="telefone"
+                placeholder="Telefone"
+                class="w-full p-3 bg-stone-700 text-white rounded border border-stone-600 focus:outline-none focus:ring-2 focus:ring-amber-500"
+              />
+              <input
+                type="number"
+                name="pessoas"
+                placeholder="Nº de Pessoas"
+                min="1"
+                class="w-full p-3 bg-stone-700 text-white rounded border border-stone-600 focus:outline-none focus:ring-2 focus:ring-amber-500"
+              />
+              <input
+                type="date"
+                name="data"
+                class="w-full p-3 bg-stone-700 text-white rounded border border-stone-600 focus:outline-none focus:ring-2 focus:ring-amber-500"
+                style="color-scheme: dark"
+              />
+              <input
+                type="time"
+                name="hora"
+                class="w-full p-3 bg-stone-700 text-white rounded border border-stone-600 focus:outline-none focus:ring-2 focus:ring-amber-500"
+                style="color-scheme: dark"
+              />
+            </div>
+            <button
+              type="submit"
+              class="mt-8 w-full py-4 bg-amber-600 text-white font-bold rounded text-lg hover:bg-amber-700 transition-colors duration-300"
+            >
+              Enviar Pedido
+            </button>
+          </form>
+          <div id="form-message" class="mt-4 text-white"></div>
+        </div>
+      </section>
+
+      <!-- Secção Contato e Localização -->
+      <section id="contato" class="py-20">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12">
+          <div>
+            <h2 class="text-3xl font-bold text-amber-500 mb-6">
+              Entre em Contato
+            </h2>
+            <div class="space-y-4 text-lg">
+              <p>
+                <strong class="text-white">Endereço:</strong> Av. Portugal, 464 - Jardim Pilar, Mauá - SP, 09370-000
+              </p>
+              <p>
+                <strong class="text-white">Telefone:</strong> (+351) 912 345 678
+              </p>
+              <p>
+                <strong class="text-white">Email:</strong>
+                reservas@churrascariaportugal.pt
+              </p>
+              <h3 class="text-2xl font-bold text-amber-500 pt-4">
+                Horário de Funcionamento
+              </h3>
+              <p><strong>Almoço:</strong> Terça a Domingo, 12:00 - 15:00</p>
+              <p><strong>Jantar:</strong> Terça a Sábado, 19:00 - 23:00</p>
+              <p>Encerra à Segunda-feira.</p>
+            </div>
+          </div>
+          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.019549445276!2d-46.46220402501662!3d-23.675258865785853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce694d5d60d3ed%3A0x6e4b49c784b43d9f!2sChurrascaria%20Portugal!5e0!3m2!1spt-BR!2sbr!4v1759377258589!5m2!1spt-BR!2sbr" class="rounded-lg shadow-xl w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secção Redes Sociais e Delivery -->
+      <section id="delivery" class="py-20 bg-stone-900">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-4xl font-bold text-amber-500 mb-4">
+            Siga-nos e Peça Online
+          </h2>
+          <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+            Acompanhe as nossas novidades no Instagram e peça o seu churrasco preferido pelo iFood.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-6">
+            <a
+              href="https://www.instagram.com/churrascaria_portugal_/?hl=pt" 
+              target="_blank"
+              class="px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-full hover:scale-105 transition-transform duration-300 inline-block"
+              >Visite o nosso Instagram</a
+            >
+            <a
+              href="#" 
+              target="_blank"
+              class="px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg bg-red-600 text-white font-bold rounded-full hover:scale-105 transition-transform duration-300 inline-block"
+              >Peça pelo iFood</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-black py-8">
+      <div class="container mx-auto text-center text-gray-400">
+        <p>&copy; 2024 Churrascaria Portugal. Todos os direitos reservados.</p>
+        <p class="text-sm mt-2">Desenvolvido com paixão pelo sabor.</p>
+      </div>
+    </footer>
+    
+    <!-- Modal para Imagens -->
+    <div id="image-modal" class="modal-overlay hidden">
+      <span class="close-modal">&times;</span>
+      <img class="modal-content" id="modal-image">
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
