@@ -1,5 +1,11 @@
 // Aguarda o carregamento completo do conteúdo da página
 document.addEventListener("DOMContentLoaded", () => {
+  // Inicializa o AOS
+  AOS.init({
+    duration: 1000, // Duração da animação em ms
+    once: true, // Se a animação deve acontecer apenas uma vez
+  });
+
   // Lógica para o menu mobile
   const mobileMenuButton = document.getElementById("mobile-menu-button");
   const mobileMenu = document.getElementById("mobile-menu");

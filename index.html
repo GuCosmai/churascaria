@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="text-gray-200">
@@ -86,7 +87,7 @@
       <section
         class="hero-bg h-screen flex items-center justify-center text-center text-white"
       >
-        <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+        <div class="bg-black bg-opacity-50 p-8 rounded-lg" data-aos="fade-up">
           <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-4">
           Churrascaria <span class="text-amber-500">Portugal</span>
         </h1>
@@ -105,6 +106,7 @@
       <section id="sobre" class="py-20 bg-stone-900">
         <div
           class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
+          data-aos="fade-right"
         >
           <div>
             <img
@@ -134,7 +136,7 @@
 
       <!-- Secção Cardápio -->
       <section id="cardapio" class="py-20">
-        <div class="container mx-auto px-6 text-center">
+        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
           <h2 class="text-4xl font-bold text-amber-500 mb-2">
             O Nosso Cardápio
           </h2>
@@ -143,7 +145,7 @@
           </p>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
             <!-- Item Cardápio 1 -->
-            <div class="bg-stone-800 p-6 rounded-lg">
+            <div class="bg-stone-800 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100">
               <h3 class="text-2xl font-bold text-white mb-2">
                 Rodízio Completo
               </h3>
@@ -154,7 +156,7 @@
               </p>
             </div>
             <!-- Item Cardápio 2 -->
-            <div class="bg-stone-800 p-6 rounded-lg">
+            <div class="bg-stone-800 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
               <h3 class="text-2xl font-bold text-white mb-2">Picanha Nobre</h3>
               <p class="text-gray-400">
                 A rainha do churrasco. Suculenta, macia e com uma capa de
@@ -163,7 +165,7 @@
               </p>
             </div>
             <!-- Item Cardápio 3 -->
-            <div class="bg-stone-800 p-6 rounded-lg">
+            <div class="bg-stone-800 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="300">
               <h3 class="text-2xl font-bold text-white mb-2">
                 Costela Premium
               </h3>
@@ -173,7 +175,7 @@
               </p>
             </div>
             <!-- Item Cardápio 4 -->
-            <div class="bg-stone-800 p-6 rounded-lg">
+            <div class="bg-stone-800 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="400">
               <h3 class="text-2xl font-bold text-white mb-2">
                 Buffet de Saladas
               </h3>
@@ -183,7 +185,7 @@
               </p>
             </div>
             <!-- Item Cardápio 5 -->
-            <div class="bg-stone-800 p-6 rounded-lg">
+            <div class="bg-stone-800 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="500">
               <h3 class="text-2xl font-bold text-white mb-2">
                 Vinhos Selecionados
               </h3>
@@ -193,7 +195,7 @@
               </p>
             </div>
             <!-- Item Cardápio 6 -->
-            <div class="bg-stone-800 p-6 rounded-lg">
+            <div class="bg-stone-800 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="600">
               <h3 class="text-2xl font-bold text-white mb-2">
                 Sobremesas da Casa
               </h3>
@@ -208,7 +210,7 @@
 
       <!-- Secção de Menus -->
       <section id="menus" class="py-20 bg-stone-900">
-        <div class="container mx-auto px-6 text-center">
+        <div class="container mx-auto px-6 text-center" data-aos="fade-left">
           <h2 class="text-4xl font-bold text-amber-500 mb-2">
             Nossos Cardápios
           </h2>
@@ -234,7 +236,7 @@
 
       <!-- Secção Galeria -->
       <section id="galeria" class="py-20">
-        <div class="container mx-auto px-6 text-center">
+        <div class="container mx-auto px-6 text-center" data-aos="zoom-in">
           <h2 class="text-4xl font-bold text-amber-500 mb-12">
             Momentos e Sabores
           </h2>
@@ -319,7 +321,7 @@
             url('https://img.criativodahora.com.br/2024/02/criativo-65bd8ee0379b1MDIvMDIvMjAyNCAyMWg1NA==.jpg');
         "
       >
-        <div class="container mx-auto px-6 text-center">
+        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
           <h2 class="text-4xl font-bold text-amber-500 mb-4">
             Reserve a sua Mesa
           </h2>
@@ -384,7 +386,7 @@
       <!-- Secção Contato e Localização -->
       <section id="contato" class="py-20">
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12">
-          <div>
+          <div data-aos="fade-right">
             <h2 class="text-3xl font-bold text-amber-500 mb-6">
               Entre em Contato
             </h2>
@@ -407,7 +409,7 @@
               <p>Encerra à Segunda-feira.</p>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-left">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.019549445276!2d-46.46220402501662!3d-23.675258865785853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce694d5d60d3ed%3A0x6e4b49c784b43d9f!2sChurrascaria%20Portugal!5e0!3m2!1spt-BR!2sbr!4v1759377258589!5m2!1spt-BR!2sbr" class="rounded-lg shadow-xl w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
@@ -415,7 +417,7 @@
 
       <!-- Secção Redes Sociais e Delivery -->
       <section id="delivery" class="py-20 bg-stone-900">
-        <div class="container mx-auto px-6 text-center">
+        <div class="container mx-auto px-6 text-center" data-aos="zoom-in-up">
           <h2 class="text-4xl font-bold text-amber-500 mb-4">
             Siga-nos e Peça Online
           </h2>
@@ -454,6 +456,7 @@
       <img class="modal-content" id="modal-image">
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
